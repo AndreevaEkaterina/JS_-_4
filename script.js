@@ -71,7 +71,9 @@ for (let i = 0; i < array.length; i++) {
 // задача 1
 
 // задача 2
-
+const arr1 = [1, 2, 3, 4, 5, 6, 7];
+const arr2 = arr1.splice(3, 2);
+console.log(arr1);
 // задача 2
 
 // задача 3
