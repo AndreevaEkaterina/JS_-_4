@@ -77,9 +77,59 @@ console.log(arr1);
 // задача 2
 
 // задача 3
+function getRandomNumber(max){
+  return Math.floor(Math.random() * max);
+}
 
+function getMinNumber(arr) {
+  let min = arr[0];
+  
+  for(i = 0; i < arr.length; i++) {
+      if (arr[i] < min) {
+          min = arr[i];
+      }
+  }
+
+  return min;
+}
+
+function getElements() {
+  const list = [];
+  
+  for (i = 0; i < 5; i++) {
+      list.push(getRandomNumber(9));
+  }
+
+  return list;
+}
+
+function getSum(arr) {
+  return arr.reduce((sum, element) => sum + element, 0);
+}
+
+function checkNumber3(arr) {
+  return arr.some((element) => element === 3);
+}
+
+const elements = getElements();
+
+console.log(elements, 'elements');
+console.log(getSum(elements), 'sumElements');
+console.log(getMinNumber(elements), 'min');
+console.log(checkNumber3(elements), 'checkNumber3');
 // задача 3
 
 // задача 4
 
+function getSlide(count, symbol) {
+  let str = symbol;
+  console.log(str);
+  
+  for(i = 1; i < count; i++) {
+      str = str + symbol;
+      console.log(str);
+  }
+}
+
+getSlide(20, 'X');
 // задача 4
